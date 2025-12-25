@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <div class="container">
+        <h1>Pokédex</h1>
+
+        <form id="searchForm">
+            <input type="text" id="name" placeholder="Enter Pokémon name" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="msg"></p>
+    </div>
+
+    <div class="card" id="pokemonCard" style="display: none;">
+        <h2 id="pokeName">Pokemon Name</h2>
+        <img id="pokeImage" alt="Pokemon image" src="">
+
+        <div class="info">
+            <p><strong>ID:</strong> <span id="pokeId"></span></p>
+            <p><strong>Height:</strong> <span id="pokeHeight"></span> m</p>
+            <p><strong>Weight:</strong> <span id="pokeWeight"></span> kg</p>
+        </div>
+
+        <div class="types" id="types">
+
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <span>HP</span>
+                <span id="hp"></span>
+            </div>
+            <div class="stat">
+                <span>Attack</span>
+                <span id="attack"></span>
+            </div>
+            <div class="stat">
+                <span>Defense</span>
+                <span id="defense"></span>
+            </div>
+            <div class="stat">
+                <span>Speed</span>
+                <span id="speed"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

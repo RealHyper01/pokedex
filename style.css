@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #0f172a;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container {
+    background: #020617;
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #38bdf8;
+    color: #020617;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background: #0ea5e9;
+}
+
+#msg {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f87171;
+}
+
+.card {
+    background: #020617;
+    width: 340px;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.card img {
+    width: 150px;
+    margin: 15px 0;
+}
+
+.info {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.info p {
+    margin: 4px 0;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.type {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Pokémon type colors */
+.type.normal { background: #A8A77A; }
+.type.fire { background: #EE8130; }
+.type.water { background: #6390F0; }
+.type.electric { background: #F7D02C; color: black; }
+.type.grass { background: #7AC74C; color: black; }
+.type.ice { background: #96D9D6; color: black; }
+.type.fighting { background: #C22E28; }
+.type.poison { background: #A33EA1; }
+.type.ground { background: #E2BF65; color: black; }
+.type.flying { background: #A98FF3; }
+.type.psychic { background: #F95587; }
+.type.bug { background: #A6B91A; color: black; }
+.type.rock { background: #B6A136; color: black; }
+.type.ghost { background: #735797; }
+.type.dragon { background: #6F35FC; }
+.type.dark { background: #705746; }
+.type.steel { background: #B7B7CE; color: black; }
+.type.fairy { background: #D685AD; }
+
+.stats {
+    margin-top: 10px;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #1e293b;
+}
+
+.stat:last-child {
+    border-bottom: none;
+}
